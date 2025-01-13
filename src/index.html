@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<body class="font-dm-sans bg-color-background  text-white">
+    <div class="w-[90%] mx-auto overflow-hidden max-w-screen-xl">
+        <header>
+            <nav class="flex h-20 items-center justify-between">
+                <a href="./" class="w-1/2 max-w-[200px]">
+                    <h1 class="text-white font-bold block text-3xl w-full">David Alonso</h1>
+                </a>
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+                <label for="menu" class="w-10 h-10 bg-open-menu bg-cover bg-center  cursor-pointer 
+                        border-2 rounded-lg md:hidden
+                        peer-checked/menu:bg-close-menu peer-checked/menu:border-none transition-all z-40">
+                </label>
+                <ul class="fixed inset-0 bg-menu-color px-[5%] grid auto-rows-max content-center  justify-items-center
+                                clip-circle-0 gap-6 
+                                 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent">
+                    <li>
+                        <a href="#/">Home </a>
+                    </li>
+                    <li>
+                        <a href="#/">About me</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="pt-10 pb-16 md:flex justify-between items-center">
+                <figure class="md:order-1">
+                    <img src="./assets/foto_perfil.jpg" alt="Hero" class="w-[90%] aspect-square rounded-full object-cover max-w-sm mx-auto">
+                </figure>
+                <article class="text-center mt-8">
+
+                    <h1 class="text-4xl">Hi, I'm David, </h1>
+                    <p class="text-gray-color text-xl mt-3">I am a full stack developer</p>
+                    <div class="grid grid-cols-[repeat(auto-fit, minmax(170px,1fr))] gap-8 auto-rows-[60px] max-w-lg mx-auto">
+                        <a href="#" class="bg-blue-color text-white px-4 py-2 rounded-lg mt-4 flex items-center justify-center">Download CV</a>
+                        <a href="#" class="bg-gray-color text-white px-4 py-2 rounded-lg mt-4 flex items-center justify-center">Learn more</a>
+                    </div>
+                </article>
+            </section>
+        </header>
+
+
+
+    </div>
+
+</body>
+
+</html>
