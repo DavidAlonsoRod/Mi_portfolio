@@ -14,6 +14,9 @@
     .icons  {
         @apply fill-blue-color w-10;
     }
+    .focus-input {
+        @apply outline-none focus:ring-1 focus:ring-blue-color focus:ring-inset transition;
+    }
 }
 @layer utilities {
     .clip-circle-0 {
