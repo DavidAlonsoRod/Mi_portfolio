@@ -21,6 +21,12 @@
     .focus-input {
         @apply outline-none focus:ring-1 focus:ring-blue-color focus:ring-inset transition;
     }
+    .zoom-hover {
+        @apply transition-transform duration-300 ease-in-out;
+    }
+    .zoom-hover:hover {
+        @apply scale-110;
+    }
 }
 @layer utilities {
     .clip-circle-0 {
