@@ -55,10 +55,12 @@
 
                 <div class="w-80  rounded-lg mt-8 items-center justify-center">
                     <h4 class="text-2xl">Tecnologías</h4>
-                    <p class="text-gray-color">BACKEND: PYTHON + FLASH</p>
+                    <p class="text-gray-color">BACKEND: PYTHON + FLASK</p>
                     <p class="text-gray-color">FRONT: JS REACT </p>
                     <p class="text-gray-color">WOOCOMMERCE API</p>
                     <p class="text-gray-color">JWT</p>
+                    <p class="text-gray-color">Integración con calendario de google (En desarrollo)</p>
+                    <p class="text-gray-color">Integración con Cloudinary(En desarrollo)</p>
                     <div class="grid-col-2 flex justify-between ">
                         <div class="mt-2">
                             <h5 class="text-ellipsis text-xs mt-1 "> Creado para </h5>
@@ -74,24 +76,49 @@
                         <h4 class="text-2xl mt-3">Descripción</h4>
                         <p class="text-gray-color">Ay, WooCommerce! Tan querido... y, a la vez, tan odiado. 
                             Sin duda, es uno de los CMS más usados, pero... ¡es tan, tan, tan lento! </p>
-                        <p class="text-gray-color"> Con esta aplicación podemos llevar woocommerce a otro nivel con las siguientes </p>
-                        <p class="text-white-color mt-3"> Características: </p>
-                        <ol>
-                            <li class="text-gray-color">- Manejo de estados de fabricación por productos con
-                                 escaneo de códigos QR para cambiar el estado de los productos de cada pedido.</li>
-                                
-                            <li class="text-gray-color">- Listado de pedidos por cliente instantaneo</li>
-                            <li class="text-gray-color">- CRUD incluido para modificar los datos de facturación y envío, así como los estados de órdenes.</li>
-                            <li class="text-gray-color">- Conexión a través de la Api de Woocommerce, </li>
-                        </ol>
+                        <p class="text-gray-color"> Con esta aplicación podemos llevar woocommerce a otro nivel con las siguientes funciones. </p>
+                        
+                        
                     </div>
                 </div>
-
-
+                
+                
             </div>
             
-            
+            <div class="mt-6">
+                <h1 class="text-3xl mt-10">Características</h1>
+                <div class="mt-6 ms-3">
+                    <h2 class="text-2xl mt-5">1. Manejo de estados con  QR</h2>
+                    <p class="text-gray-color mt-3">Permite a los operarios de distintos departamentos manejar cualquier 
+                        estado de fabricación del producto a través del escaneo del códigio QR en la hoja de trabajo .</p>
+                  
+                    <h2 class="text-2xl mt-5">2. Velocidad</h2>
+                    <p class="text-gray-color mt-3">La velocidad en las consultas es clave en esta aplicación. Trabaja directamen</p>
+                    <h2 class="text-2xl mt-5">3. Avisos en la producción.</h2>
+                    <p class="text-gray-color mt-3">Podemos incluir los festivos locales y nacionales, e insertar los días laborables de producción por defecto para los distintos pedidos.</p>
+                    <p class="text-gray-color mt-3">La App va dando asignando colores en las fechas que se aproximan al día de entrega.</p>
+                    <h2 class="text-2xl mt-5">4. Facturación </h2><h3>(Actualmente en desarrollo)</h3>
+                    <p class="text-gray-color mt-3">Podemos facturar todas las órdenes de woocommerce de un mismo cliente automáticamente al cierre del mes, la quincena etc...</p>
+                    <h2 class="text-2xl mt-5">5. Albaranes, facturas proforma y rectificativas </h2><h3>(Actualmente en desarrollo)</h3>
+                    <p class="text-gray-color mt-3">Podremos crear pedidos, albaranes y facturas rectificativas directamente en nuestra aplicación .</p>
+                    <h2 class="text-2xl mt-5">6. Eventos en calendario </h2><h3>(Actualmente en desarrollo)</h3>
+                    <p class="text-gray-color mt-3">Podrás ver los pedidos organizados en el calendario con su fecha de salida estimada.</p>
+
+                </div>
+            </div>
         </div>
+        <div class="flex flex-col items-center mt-8">
+            <h4 class="text-2xl">Capturas</h4>
+            <div class="w-full max-w-4xl grid gap-8 mt-10">
+                <img src="../assets/orderlist.webp" alt="Foto de Paula"
+                    class="w-full object-cover rounded-lg">
+                <img src="../assets/production_control.webp" alt="Foto de Paula"
+                    class="w-full object-cover rounded-lg">
+                <img src="../assets/scanqr2.webp" alt="Foto de Paula"
+                    class="w-full object-cover rounded-lg max-w-[600px] mx-auto">
+            </div>
+        </div>
+        
     <footer class="py-16 text-center mt-6">
         <p class="text-gray-color"> © Davilondev 2024</p>
         <p class="text-gray-color">Hecho con tailwind, css y html</p>
