@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Woocommerce Producto Manager</title>
+    <title>Woocommerce Product Manager</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
@@ -44,6 +44,8 @@
 
         </header>
         <h1 class="text-4xl text-center mt-8">Woocommerce Product Manager</h1>
+        <h2 class="text-1xl text-center mt-4">Nota: este repositorio se ha convertido en privado por fines de comercialización.</h2>
+        <h4 class="text-1xl text-center mt-2">Si eres recluter solícita acceso al mismo en <a href="mailto:hello@davilondev.com" class="text-neutral-400 zoom-hover hover-text-change" data-hover-text="Enviar Email">hello@davilondev.com</a></h4>
         <div class="grid gap-2 mt-8 justify-center justify-items-center md:grid-cols-2 md:gap-4">
 
 
@@ -85,37 +87,44 @@
                 
             </div>
             
-            <div class="mt-6">
+            
+        </div>
+        <div class="mt-6 flex flex-col md:flex-row items-start gap-8">
+            <div class="flex-grow">
                 <h1 class="text-3xl mt-10">Características</h1>
-                <div class="mt-6 ms-3">
-                    <h2 class="text-2xl mt-5">1. Manejo de estados con  QR</h2>
+                <div class="mt-6 max-w-4xl">
+                    <h2 class="text-2xl mt-5">1. Manejo de estados con QR</h2>
                     <p class="text-gray-color mt-3">Permite a los operarios de distintos departamentos manejar cualquier 
-                        estado de fabricación del producto a través del escaneo del códigio QR en la hoja de trabajo .</p>
-                  
+                        estado de fabricación del producto a través del escaneo del código QR en la hoja de trabajo.</p>
                     <h2 class="text-2xl mt-5">2. Velocidad</h2>
-                    <p class="text-gray-color mt-3">La velocidad en las consultas es clave en esta aplicación. Trabaja directamen</p>
+                    <p class="text-gray-color mt-3">La velocidad en las consultas es clave en esta aplicación. Trabaja directamen.</p>
                     <h2 class="text-2xl mt-5">3. Avisos en la producción.</h2>
                     <p class="text-gray-color mt-3">Podemos incluir los festivos locales y nacionales, e insertar los días laborables de producción por defecto para los distintos pedidos.</p>
-                    <p class="text-gray-color mt-3">La App va dando asignando colores en las fechas que se aproximan al día de entrega.</p>
-                    <h2 class="text-2xl mt-5">4. Facturación </h2><h3>(Actualmente en desarrollo)</h3>
-                    <p class="text-gray-color mt-3">Podemos facturar todas las órdenes de woocommerce de un mismo cliente automáticamente al cierre del mes, la quincena etc...</p>
-                    <h2 class="text-2xl mt-5">5. Albaranes, facturas proforma y rectificativas </h2><h3>(Actualmente en desarrollo)</h3>
-                    <p class="text-gray-color mt-3">Podremos crear pedidos, albaranes y facturas rectificativas directamente en nuestra aplicación .</p>
-                    <h2 class="text-2xl mt-5">6. Eventos en calendario </h2><h3>(Actualmente en desarrollo)</h3>
+                    <p class="text-gray-color mt-3">La App va asignando colores en las fechas que se aproximan al día de entrega.</p>
+                    <h2 class="text-2xl mt-5">4. Facturación</h2><h3>(Actualmente en desarrollo)</h3>
+                    <p class="text-gray-color mt-3">Podemos facturar todas las órdenes de WooCommerce de un mismo cliente automáticamente al cierre del mes, la quincena, etc.</p>
+                    <h2 class="text-2xl mt-5">5. Albaranes, facturas proforma y rectificativas</h2><h3>(Actualmente en desarrollo)</h3>
+                    <p class="text-gray-color mt-3">Podremos crear pedidos, albaranes y facturas rectificativas directamente en nuestra aplicación.</p>
+                    <h2 class="text-2xl mt-5">6. Eventos en calendario</h2><h3>(Actualmente en desarrollo)</h3>
                     <p class="text-gray-color mt-3">Podrás ver los pedidos organizados en el calendario con su fecha de salida estimada.</p>
-
                 </div>
             </div>
-        </div>
-        <div class="flex flex-col items-center mt-8">
-            <h4 class="text-2xl">Capturas</h4>
-            <div class="w-full max-w-4xl grid gap-8 mt-10">
-                <img src="../assets/orderlist.webp" alt="Foto de Paula"
-                    class="w-full object-cover rounded-lg">
-                <img src="../assets/production_control.webp" alt="Foto de Paula"
-                    class="w-full object-cover rounded-lg">
-                <img src="../assets/scanqr2.webp" alt="Foto de Paula"
-                    class="w-full object-cover rounded-lg max-w-[600px] mx-auto">
+            <div class="w-full md:w-1/3 flex flex-col items-center">
+                <h4 class="text-2xl mt-10">Capturas</h4>
+                <div class="grid gap-4">
+                    <a href="#" onclick="openImage('../assets/orderlist.webp')">
+                        <img src="../assets/orderlist.webp" alt="Order List"
+                            class="w-full object-cover rounded-lg max-w-[1200px]">
+                    </a>
+                    <a href="#" onclick="openImage('../assets/production_control.webp')">
+                        <img src="../assets/production_control.webp" alt="Production Control"
+                            class="w-full object-cover rounded-lg max-w-[1200px]">
+                    </a>
+                    <a href="#" onclick="openImage('../assets/scanqr2.webp')">
+                        <img src="../assets/scanqr2.webp" alt="Scan QR"
+                            class="w-full object-cover rounded-lg max-w-[1200px]">
+                    </a>
+                </div>
             </div>
         </div>
         
@@ -123,5 +132,26 @@
         <p class="text-gray-color"> © Davilondev 2024</p>
         <p class="text-gray-color">Hecho con tailwind, css y html</p>
     </footer>
+    <script>
+        function openImage(src) {
+            const newWindow = window.open("", "_blank", "width=800,height=600");
+            newWindow.document.write(`
+                <html>
+                    <head>
+                        <title>Imagen</title>
+                        <style>
+                            body { margin: 0; display: flex; justify-content: center; align-items: center; background-color: #000; }
+                            img { max-width: 100%; max-height: 100%; }
+                            button { position: absolute; top: 20px; right: 20px; padding: 10px 20px; background: #fff; border: none; cursor: pointer; font-size: 16px; }
+                        </style>
+                    </head>
+                    <body>
+                        <button class="border-r-2" onclick="window.close()">X</button>
+                        <img src="${src}" alt="Imagen">
+                    </body>
+                </html>
+            `);
+        }
+    </script>
 </body>
 </html>
