@@ -1,40 +1,128 @@
-@tailwind base; 
-@tailwind components;   
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 @layer base {
-    h1,h2,h3,h4,h5,h6 {
-        @apply font-bold;
-    }
-    a {
-        @apply text-blue-color;
-    }
-    
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  a {
+    @apply text-blue-color;
+  }
+
+  ::selection {
+    background: #ffe8e0;
+    color: #0c1f1c;
+  }
 }
+
 @layer components {
-    .icons-container {
-        @apply p-4 w-max aspect-square bg-card-color rounded-full;
-    }
-    .icons  {
-        @apply fill-blue-color w-10;
-    }
-    .focus-input {
-        @apply outline-none focus:ring-1 focus:ring-blue-color focus:ring-inset transition;
-    }
-    .zoom-hover {
-        @apply transition-transform duration-300 ease-in-out;
-    }
-    .zoom-hover:hover {
-        @apply scale-110;
-    }
+  .theme-light {
+    @apply bg-paper font-sans text-ink antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 100% 0%, rgba(255, 77, 26, 0.08), transparent 50%),
+      radial-gradient(ellipse 50% 40% at 0% 100%, rgba(12, 31, 28, 0.06), transparent 45%);
+    background-attachment: fixed;
+  }
+
+  .theme-light h1,
+  .theme-light h2,
+  .theme-light h3,
+  .theme-light h4,
+  .theme-light h5,
+  .theme-light h6 {
+    @apply font-display tracking-tight;
+  }
+
+  .theme-light a {
+    color: inherit;
+  }
+
+  .site-nav a {
+    @apply text-ink/70 transition-colors duration-300;
+  }
+
+  .site-nav a:hover {
+    @apply text-accent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-ink px-6 py-3.5 text-sm font-semibold text-paper transition-all duration-300;
+  }
+
+  .btn-primary:hover {
+    @apply bg-accent text-paper;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 border border-ink/20 px-6 py-3.5 text-sm font-semibold text-ink transition-all duration-300;
+  }
+
+  .btn-ghost:hover {
+    @apply border-accent text-accent;
+  }
+
+  .section-label {
+    @apply font-sans text-xs font-semibold uppercase tracking-[0.2em] text-accent;
+  }
+
+  .tech-chip {
+    @apply border border-ink/10 bg-surface/60 px-4 py-3 text-sm font-medium text-ink/80 transition-colors duration-300;
+  }
+
+  .tech-chip:hover {
+    @apply border-accent/40 text-ink;
+  }
+
+  .project-link {
+    @apply grid gap-6 border-t border-ink/10 py-8 transition-colors duration-300 md:grid-cols-[200px_1.4fr_auto] md:items-center;
+  }
+
+  .project-link:hover {
+    @apply border-accent/30;
+  }
+
+  .project-link:last-child {
+    @apply border-b;
+  }
+
+  .icons-container {
+    @apply aspect-square w-max rounded-full bg-card-color p-4;
+  }
+
+  .icons {
+    @apply w-10 fill-blue-color;
+  }
+
+  .focus-input {
+    @apply outline-none transition focus:ring-1 focus:ring-inset focus:ring-blue-color;
+  }
+
+  .zoom-hover {
+    @apply transition-transform duration-300 ease-in-out;
+  }
+
+  .zoom-hover:hover {
+    @apply scale-110;
+  }
 }
+
 @layer utilities {
-    .clip-circle-0 {
-        clip-path: circle(0% at top right);
-        
-     }   
-    .clip-circle-full {
-        clip-path: circle(150% at top right);
-        
-     }   
+  .clip-circle-0 {
+    clip-path: circle(0% at top right);
+  }
+
+  .clip-circle-full {
+    clip-path: circle(150% at top right);
+  }
 }
