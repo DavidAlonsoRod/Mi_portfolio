@@ -153,6 +153,29 @@
         @apply scale-[1.06];
     }
 
+    /* --- Etiquetas de tecnología --- */
+    .chip {
+        @apply rounded-full border border-white/10 px-3 py-1 text-sm text-gray-color transition-colors duration-300;
+    }
+    .chip:hover {
+        @apply border-blue-color/40 text-white;
+    }
+
+    .meta-label {
+        @apply text-xs uppercase tracking-[0.18em] text-white/50;
+    }
+
+    /* --- Capturas ampliables --- */
+    .shot {
+        @apply block w-full cursor-zoom-in text-left;
+    }
+    .shot img {
+        @apply h-auto w-full rounded-xl border border-white/10 transition duration-500 ease-out;
+    }
+    .shot:hover img {
+        @apply border-blue-color/50 opacity-95;
+    }
+
     /* --- Redes --- */
     .social-tile {
         @apply flex flex-col items-center gap-3 rounded-2xl border border-white/[0.06] px-8 py-7
@@ -224,14 +247,14 @@
     }
 }
 
+/* Solo opacidad: animar transform anularía las utilidades -translate-*
+   que centran el halo sobre su punto de anclaje */
 @keyframes fl-glow {
     0%, 100% {
-        opacity: 0.45;
-        transform: scale(1);
+        opacity: 0.55;
     }
     50% {
-        opacity: 0.75;
-        transform: scale(1.08);
+        opacity: 0.9;
     }
 }
 
@@ -293,10 +316,12 @@
 
 /* Halos: degradado radial en lugar de blur, para que no se corte
    contra el overflow de la sección */
+/* closest-side garantiza que el degradado llegue a transparente dentro
+   de la caja, aunque la sección recorte los bordes del halo */
 .glow-soft {
-    background: radial-gradient(circle at center,
-            rgba(136, 188, 191, 0.12),
-            rgba(136, 188, 191, 0) 62%);
+    background: radial-gradient(circle closest-side,
+            rgba(136, 188, 191, 0.14),
+            rgba(136, 188, 191, 0) 78%);
 }
 
 .glow-photo {

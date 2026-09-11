@@ -125,6 +125,47 @@
         });
     }
 
+    /* ---------- Lightbox de capturas ---------- */
+    var lightbox = document.getElementById('lightbox');
+
+    if (lightbox) {
+        var lightboxImg = document.getElementById('lightbox-img');
+        var lightboxClose = document.getElementById('lightbox-close');
+
+        var openLightbox = function (src, alt) {
+            lightboxImg.src = src;
+            lightboxImg.alt = alt || '';
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        };
+
+        var closeLightbox = function () {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            lightboxImg.removeAttribute('src');
+            document.body.style.overflow = '';
+        };
+
+        document.querySelectorAll('.js-lightbox-trigger').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                openLightbox(btn.dataset.src, btn.dataset.alt);
+            });
+        });
+
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+
+        lightbox.addEventListener('click', function (event) {
+            if (event.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+                closeLightbox();
+            }
+        });
+    }
+
     /* ---------- Año del footer ---------- */
     document.querySelectorAll('[data-year]').forEach(function (el) {
         el.textContent = String(new Date().getFullYear());

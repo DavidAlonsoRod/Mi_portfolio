@@ -1,89 +1,121 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis hijos</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Mis hijos — David Alonso</title>
+    <meta name="description" content="Paula, David, Vega y Frodo: la familia de David Alonso.">
+    <link rel="stylesheet" href="../css/estilos.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-dm-sans bg-color-background  text-white">
-   <div class="w-[90%] mx-auto overflow-hidden max-w-screen-xl">
-    <header>
-        <nav class="flex h-20 items-center justify-between">
-            <a href="./" class="w-1/2 max-w-[200px]">
-                <h1 class="text-white font-bold block text-3xl w-full">David Alonso</h1>
-            </a>
-            <input type="checkbox" id="menu" class="peer/menu hidden">
-            <label for="menu" class="w-10 h-10 bg-open-menu bg-cover bg-center  cursor-pointer 
-                    border-2 rounded-lg md:hidden
-                    peer-checked/menu:bg-close-menu peer-checked/menu:border-none transition-all z-40">
-            </label>
-            <ul
-                class="fixed inset-0 bg-blue-color px-[5%] grid auto-rows-max content-center  justify-items-center
-                            clip-circle-0 gap-6 
-                             peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent">
-                <li>
-                    <a href="../index.html">Inicio </a>
-                </li>
-                <li>
-                    <a href="./about_me.html">Sobre mí</a>
-                </li>
-                <li>
-                    <a href="#tecnologies">Tecnologías</a>
-                </li>
-                <li>
-                    <a href="#projects">Proyectos</a>
-                </li>
-                <li>
-                    <a href="mailto:hello@davilondev.com">Contacto</a>
-                </li>
-                <li class="flex items-center gap-2 text-sm font-semibold tracking-wide">
-                    <span class="text-white">ES</span>
-                    <span class="opacity-40">|</span>
-                    <a href="../en/pages/mishijos.html" class="opacity-70 hover:opacity-100">EN</a>
-                </li>
+<body class="font-dm-sans bg-color-background text-white flex min-h-screen flex-col">
+    <div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
 
-            </ul>
-        </nav>
-       
+    <header class="site-header" data-header>
+        <div class="w-[90%] mx-auto max-w-screen-xl">
+            <nav class="flex h-20 items-center justify-between">
+                <a href="../" class="w-1/2 max-w-[200px]">
+                    <h1 class="text-white font-bold block text-3xl w-full">David Alonso</h1>
+                </a>
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+                <label for="menu" class="w-10 h-10 bg-open-menu bg-cover bg-center cursor-pointer
+                        border-2 rounded-lg md:hidden
+                        peer-checked/menu:bg-close-menu peer-checked/menu:border-none transition-all z-40"
+                    aria-label="Abrir menú"></label>
+                <ul data-nav
+                    class="fixed inset-0 bg-blue-color px-[5%] grid auto-rows-max content-center justify-items-center
+                                clip-circle-0 gap-6
+                                 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:gap-8 md:bg-transparent">
+                    <li><a href="../" class="nav-link">Inicio</a></li>
+                    <li><a href="./about_me.html" class="nav-link">Sobre mí</a></li>
+                    <li><a href="../#tecnologies" class="nav-link">Tecnologías</a></li>
+                    <li><a href="../#projects" class="nav-link">Proyectos</a></li>
+                    <li><a href="mailto:hello@davilondev.com" class="nav-link">Contacto</a></li>
+                    <li class="flex items-center gap-2 text-sm font-semibold tracking-wide">
+                        <span class="text-white">ES</span>
+                        <span class="opacity-40">|</span>
+                        <a href="../en/pages/mishijos.html" class="text-white/60 hover:text-white">EN</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="grid gap-2 justify-center justify-items-center md:grid-cols-4 md:gap-4">
 
-        <section>
-            <img src="../assets/frodopaula.jpg" alt="Foto de Paula" class="w-60 h-60 object-cover rounded-full mx-auto mt-10 border border-solid border-gray-600">
-            <h1 class="text-center py-5 text-4xl">Paula</h1>
-            <p class="text-center px-5 text-gray-color text-lg">Mi ojito derecho, una chica muy formal, estudiante, y  qué más decir, maravillosa !!.</p>
-    
+    <main class="w-[90%] mx-auto max-w-screen-xl flex-grow">
+        <section class="pt-12 text-center">
+            <span class="eyebrow hero-in" style="--reveal-delay: 60ms">Personal</span>
+            <h2 class="hero-in mt-5 text-4xl md:text-5xl" style="--reveal-delay: 140ms">Mis hijos</h2>
         </section>
-        <section>
-            <img src="../assets/frodoanddavid.webp" alt="Foto de David" class="w-60 h-60 object-cover rounded-full mx-auto mt-10 border border-solid border-gray-600">
-            <h1 class="text-center py-5 text-4xl">David</h1>
-            <p class="text-center px-5 text-gray-color text-lg">El malote de la casa, sólo le gustan las motos, los coches, y el gaming.</p>
-    
-        </section>
-        <section>
-            <img src="../assets/vega.webp" alt="Foto de Vega" class="w-60 h-60 object-cover rounded-full mx-auto mt-10 border border-solid border-gray-600">
-            <h1 class="text-center py-5 text-4xl">Vega</h1>
-            <p class="text-center px-5 text-gray-color text-lg">
-                Puro terremoto; sólo vive para correr, saltar y jugar sin parar.</p>
-            
-        </section>
-        <section>
-            <img src="../assets/frodo_vintage.webp" alt="Foto de Frodo" class="w-60 h-60 object-cover rounded-full mx-auto mt-10 border border-solid  border-gray-600">
-            <h1 class="text-center py-5 text-4xl">Frodo</h1>
-            <p class="text-center px-5 text-gray-color text-lg">El rey de la casa, bueno, obediente, sólo vive para comer y dormir !! .</p>
-    
-        </section>
-    </div>
-   </div>
-     <footer class="py-16 text-center">
-            <p class="text-gray-color"> © Davilondev 2024</p>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4" data-reveal-group="120">
+            <article class="card p-8 text-center" data-reveal="zoom">
+                <img src="../assets/frodopaula.jpg" alt="Foto de Paula"
+                    class="mx-auto h-40 w-40 rounded-full border border-white/10 object-cover">
+                <h3 class="mt-6 text-2xl">Paula</h3>
+                <p class="mt-3 leading-relaxed text-gray-color">
+                    Mi ojito derecho, una chica muy formal, estudiante, y qué más decir, maravillosa !!.
+                </p>
+            </article>
+
+            <article class="card p-8 text-center" data-reveal="zoom">
+                <img src="../assets/frodoanddavid.webp" alt="Foto de David"
+                    class="mx-auto h-40 w-40 rounded-full border border-white/10 object-cover">
+                <h3 class="mt-6 text-2xl">David</h3>
+                <p class="mt-3 leading-relaxed text-gray-color">
+                    El malote de la casa, sólo le gustan las motos, los coches, y el gaming.
+                </p>
+            </article>
+
+            <article class="card p-8 text-center" data-reveal="zoom">
+                <img src="../assets/vega.webp" alt="Foto de Vega"
+                    class="mx-auto h-40 w-40 rounded-full border border-white/10 object-cover">
+                <h3 class="mt-6 text-2xl">Vega</h3>
+                <p class="mt-3 leading-relaxed text-gray-color">
+                    Puro terremoto; sólo vive para correr, saltar y jugar sin parar.
+                </p>
+            </article>
+
+            <article class="card p-8 text-center" data-reveal="zoom">
+                <img src="../assets/frodo_vintage.webp" alt="Foto de Frodo"
+                    class="mx-auto h-40 w-40 rounded-full border border-white/10 object-cover">
+                <h3 class="mt-6 text-2xl">Frodo</h3>
+                <p class="mt-3 leading-relaxed text-gray-color">
+                    El rey de la casa, bueno, obediente, sólo vive para comer y dormir !! .
+                </p>
+            </article>
+        </div>
+
+        <div class="mt-14 flex justify-center" data-reveal>
+            <a href="../" class="btn btn-ghost">
+                <span class="btn-arrow" aria-hidden="true">←</span>
+                Volver al inicio
+            </a>
+        </div>
+    </main>
+
+    <footer class="mt-14 border-t border-white/[0.07] py-12">
+        <div class="w-[90%] mx-auto flex max-w-screen-xl flex-col items-center gap-6 md:flex-row md:justify-between">
+            <p class="text-gray-color">© Davilondev <span data-year>2026</span></p>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="mailto:hello@davilondev.com" class="nav-link">Email</a>
+                <a href="https://github.com/DavidAlonsoRod" target="_blank" rel="noopener noreferrer"
+                    class="nav-link">Github</a>
+                <a href="https://www.linkedin.com/in/david-alonso-r/" target="_blank" rel="noopener noreferrer"
+                    class="nav-link">Linkedin</a>
+            </div>
             <p class="text-gray-color">Hecho con tailwind css y html</p>
-        </footer>
+        </div>
+    </footer>
 
+    <button type="button" class="to-top" data-to-top aria-label="Volver arriba">
+        <span aria-hidden="true">↑</span>
+    </button>
 
+    <script src="../js/main.js?v=2" defer></script>
 </body>
 
 </html>

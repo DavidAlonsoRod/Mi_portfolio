@@ -1,254 +1,253 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factulab · VeriFactu</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Factulab · VeriFactu — David Alonso</title>
+    <meta name="description"
+        content="SaaS multi-tenant para laboratorios fotográficos: producción, facturación, contabilidad y tienda con marca.">
+    <link rel="stylesheet" href="../css/estilos.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-dm-sans bg-color-background text-white flex flex-col min-h-screen">
-    <div class="w-[90%] mx-auto overflow-hidden max-w-screen-xl flex-grow">
-        <header>
+<body class="font-dm-sans bg-color-background text-white flex min-h-screen flex-col">
+    <div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+
+    <header class="site-header" data-header>
+        <div class="w-[90%] mx-auto max-w-screen-xl">
             <nav class="flex h-20 items-center justify-between">
                 <a href="../" class="w-1/2 max-w-[200px]">
                     <h1 class="text-white font-bold block text-3xl w-full">David Alonso</h1>
                 </a>
                 <input type="checkbox" id="menu" class="peer/menu hidden">
-                <label for="menu" class="w-10 h-10 bg-open-menu bg-cover bg-center  cursor-pointer 
+                <label for="menu" class="w-10 h-10 bg-open-menu bg-cover bg-center cursor-pointer
                         border-2 rounded-lg md:hidden
-                        peer-checked/menu:bg-close-menu peer-checked/menu:border-none transition-all z-40">
-                </label>
-                <ul
-                    class="fixed inset-0 bg-blue-color px-[5%] grid auto-rows-max content-center  justify-items-center
-                                clip-circle-0 gap-6 
-                                 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent">
-                    <li>
-                        <a href="../">Inicio </a>
-                    </li>
-                    <li>
-                        <a href="../#tecnologies">Tecnologías</a>
-                    </li>
-                    <li>
-                        <a href="../#projects">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="mailto:hello@davilondev.com">Contacto</a>
-                    </li>
+                        peer-checked/menu:bg-close-menu peer-checked/menu:border-none transition-all z-40"
+                    aria-label="Abrir menú"></label>
+                <ul data-nav
+                    class="fixed inset-0 bg-blue-color px-[5%] grid auto-rows-max content-center justify-items-center
+                                clip-circle-0 gap-6
+                                 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:gap-8 md:bg-transparent">
+                    <li><a href="../" class="nav-link">Inicio</a></li>
+                    <li><a href="./about_me.html" class="nav-link">Sobre mí</a></li>
+                    <li><a href="../#tecnologies" class="nav-link">Tecnologías</a></li>
+                    <li><a href="../#projects" class="nav-link">Proyectos</a></li>
+                    <li><a href="mailto:hello@davilondev.com" class="nav-link">Contacto</a></li>
                     <li class="flex items-center gap-2 text-sm font-semibold tracking-wide">
                         <span class="text-white">ES</span>
                         <span class="opacity-40">|</span>
-                        <a href="../en/pages/factulab.html" class="opacity-70 hover:opacity-100">EN</a>
+                        <a href="../en/pages/factulab.html" class="text-white/60 hover:text-white">EN</a>
                     </li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <h1 class="text-4xl text-center mt-8">Factulab · VeriFactu</h1>
-        <h2 class="text-lg text-center mt-4 text-gray-color max-w-3xl mx-auto leading-relaxed">
-            SaaS multi-tenant para laboratorios fotográficos: producción, facturación y tienda con marca
-        </h2>
+    <main class="w-[90%] mx-auto max-w-screen-xl flex-grow">
+        <section class="pt-12 text-center">
+            <span class="eyebrow hero-in" style="--reveal-delay: 60ms">Proyecto</span>
+            <h2 class="hero-in mt-5 text-4xl md:text-5xl" style="--reveal-delay: 140ms">Factulab · VeriFactu</h2>
+            <p class="hero-in mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-gray-color"
+                style="--reveal-delay: 220ms">
+                SaaS multi-tenant para laboratorios fotográficos: producción, facturación y tienda con marca
+            </p>
+        </section>
 
-        <div class="grid gap-10 mt-12 items-start justify-center md:grid-cols-2">
-            <div class="w-full max-w-xl mx-auto">
+        <div class="mt-12 grid gap-8 md:grid-cols-2 md:items-start">
+            <figure class="card p-4" data-reveal="left">
                 <img src="../assets/factulab_verifactu.jpg" alt="Captura de Factulab con VeriFactu disponible"
-                    class="w-full h-auto rounded-lg border border-white/10">
-                <p class="text-gray-color text-sm mt-3 text-center">Landing de Factulab destacando VeriFactu</p>
-            </div>
+                    class="h-auto w-full rounded-xl">
+                <figcaption class="mt-3 text-center text-sm text-gray-color">
+                    Landing de Factulab destacando VeriFactu
+                </figcaption>
+            </figure>
 
-            <div class="w-full max-w-md mx-auto md:mx-0 md:pt-2">
-                <h4 class="text-2xl mb-4">Tecnologías</h4>
-                <div class="flex flex-wrap gap-2 text-sm text-gray-color">
-                    <span class="rounded border border-white/10 px-2.5 py-1">Python · Flask · Gunicorn</span>
-                    <span class="rounded border border-white/10 px-2.5 py-1">SQLAlchemy · Alembic · JWT</span>
-                    <span class="rounded border border-white/10 px-2.5 py-1">PostgreSQL</span>
-                    <span class="rounded border border-white/10 px-2.5 py-1">React · Canvas 2D / SVG</span>
-                    <span class="rounded border border-white/10 px-2.5 py-1">AWS S3 · Dropbox</span>
-                    <span class="rounded border border-white/10 px-2.5 py-1">PyMuPDF · FontTools</span>
-                    <span class="rounded border border-white/10 px-2.5 py-1">Redsys · VeriFactu</span>
-                    <span class="rounded border border-white/10 px-2.5 py-1">PGC · IMAP · WooCommerce</span>
+            <div class="card p-8" data-reveal="right">
+                <h3 class="text-2xl">Tecnologías</h3>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="chip">Python · Flask · Gunicorn</span>
+                    <span class="chip">SQLAlchemy · Alembic · JWT</span>
+                    <span class="chip">PostgreSQL</span>
+                    <span class="chip">React · Canvas 2D / SVG</span>
+                    <span class="chip">AWS S3 · Dropbox</span>
+                    <span class="chip">PyMuPDF · FontTools</span>
+                    <span class="chip">Redsys · VeriFactu</span>
+                    <span class="chip">PGC · IMAP · WooCommerce</span>
                 </div>
 
-                <div class="flex justify-between gap-6 mt-8 pt-5 border-t border-white/10">
+                <div class="mt-8 flex justify-between gap-6 border-t border-white/[0.07] pt-5">
                     <div>
-                        <h5 class="text-xs tracking-wide uppercase text-white/50">Creado para</h5>
-                        <p class="text-gray-color text-sm mt-1">VEGA CLOUD SOLUTIONS S.L.</p>
+                        <h4 class="meta-label">Creado para</h4>
+                        <p class="mt-1 text-sm text-gray-color">VEGA CLOUD SOLUTIONS S.L.</p>
                     </div>
                     <div class="text-right">
-                        <h5 class="text-xs tracking-wide uppercase text-white/50">Fecha</h5>
-                        <p class="text-gray-color text-sm mt-1">2025–2026</p>
+                        <h4 class="meta-label">Fecha</h4>
+                        <p class="mt-1 text-sm text-gray-color">2025–2026</p>
                     </div>
                 </div>
 
-                <a href="https://factulab.es" target="_blank" rel="noopener noreferrer"
-                    class="bg-blue-color text-white px-4 py-2 rounded-lg mt-6 inline-flex zoom-hover">
-                    Ver Factulab
-                </a>
+                <div class="mt-8">
+                    <a href="https://factulab.es" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        Ver Factulab
+                        <span class="btn-arrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <section class="mt-16 max-w-3xl mx-auto">
-            <h4 class="text-2xl text-center mb-5">Descripción</h4>
-            <p class="text-gray-color leading-relaxed">
-                SaaS multi-tenant orientado a B2B que cubre producción, facturación, contabilidad y tienda online con marca
-                para laboratorios fotográficos. Estas son las funciones principales de Factulab:
-            </p>
-            <ul class="feature-list text-gray-color">
-                <li>Obtención de imágenes suministradas por el cliente para impresión en distintos soportes</li>
-                <li>Facturación de los pedidos obtenidos de la tienda online</li>
-                <li>Contabilidad de las operaciones de la empresa</li>
-                <li>Escaneo de facturas de compra con IA para su importación a la contabilidad</li>
-                <li>Tienda online con marca para la venta de productos personalizados con imágenes y textos</li>
-                <li>Gestión de tareas tipo Trello asignadas a empleados</li>
-                <li>Portal de clientes para la visualización de pedidos y facturas</li>
-                <li>Facturación electrónica española con VeriFactu (AEAT)</li>
-                <li>Integraciones: pagos Redsys, contabilidad PGC, facturas de compra por IMAP y WooCommerce</li>
-            </ul>
-            <div class="mt-8 space-y-3 text-gray-color leading-relaxed border-t border-white/10 pt-6">
-                <p>
-                    API Flask multi-tenant (SQLAlchemy, Alembic, JWT, PostgreSQL) con aislamiento por
-                    empresa, Gunicorn en producción y branding basado en dominio.
+        <section class="py-16">
+            <div class="text-center" data-reveal>
+                <span class="eyebrow">Detalle</span>
+                <h3 class="mt-5 text-3xl md:text-4xl">Descripción</h3>
+            </div>
+
+            <div class="mx-auto mt-8 max-w-3xl" data-reveal style="--reveal-delay: 120ms">
+                <p class="leading-relaxed text-gray-color">
+                    SaaS multi-tenant orientado a B2B que cubre producción, facturación, contabilidad y tienda online
+                    con marca para laboratorios fotográficos. Estas son las funciones principales de Factulab:
                 </p>
-                <p>
-                    Diseñador online en el navegador (Canvas 2D, SVG, PDF vectorial con PyMuPDF/FontTools)
-                    para maquetas listas para imprimir, más un flujo de personalización orientado al comprador.
-                </p>
+                <ul class="feature-list text-gray-color">
+                    <li>Obtención de imágenes suministradas por el cliente para impresión en distintos soportes</li>
+                    <li>Facturación de los pedidos obtenidos de la tienda online</li>
+                    <li>Contabilidad de las operaciones de la empresa</li>
+                    <li>Escaneo de facturas de compra con IA para su importación a la contabilidad</li>
+                    <li>Tienda online con marca para la venta de productos personalizados con imágenes y textos</li>
+                    <li>Gestión de tareas tipo Trello asignadas a empleados</li>
+                    <li>Portal de clientes para la visualización de pedidos y facturas</li>
+                    <li>Facturación electrónica española con VeriFactu (AEAT)</li>
+                    <li>Integraciones: pagos Redsys, contabilidad PGC, facturas de compra por IMAP y WooCommerce</li>
+                </ul>
+                <div class="mt-8 space-y-3 border-t border-white/10 pt-6 leading-relaxed text-gray-color">
+                    <p>
+                        API Flask multi-tenant (SQLAlchemy, Alembic, JWT, PostgreSQL) con aislamiento por
+                        empresa, Gunicorn en producción y branding basado en dominio.
+                    </p>
+                    <p>
+                        Diseñador online en el navegador (Canvas 2D, SVG, PDF vectorial con PyMuPDF/FontTools)
+                        para maquetas listas para imprimir, más un flujo de personalización orientado al comprador.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section class="mt-16">
-            <h3 class="text-2xl text-center mb-6">Vídeo demo</h3>
-            <div class="relative w-full max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden border border-white/10">
-                <iframe class="absolute inset-0 h-full w-full"
-                    src="https://www.youtube.com/embed/Yo_eXC7-72I"
-                    title="Factulab demo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+        <section class="pb-16">
+            <div class="text-center" data-reveal>
+                <span class="eyebrow">Demo</span>
+                <h3 class="mt-5 text-3xl md:text-4xl">Vídeo demo</h3>
+            </div>
+            <div class="card mx-auto mt-8 max-w-4xl p-3" data-reveal style="--reveal-delay: 120ms">
+                <div class="relative aspect-video w-full overflow-hidden rounded-xl">
+                    <iframe class="absolute inset-0 h-full w-full" src="https://www.youtube.com/embed/Yo_eXC7-72I"
+                        title="Factulab demo"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
-        <section class="mt-16 mb-4">
-            <h3 class="text-2xl text-center mb-2">Capturas de la aplicación</h3>
-            <p class="text-gray-color text-sm text-center mb-8">Haz clic en una captura para ampliarla</p>
-            <div class="grid gap-x-6 gap-y-10 sm:grid-cols-2 max-w-5xl mx-auto">
-                <figure>
-                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
-                        data-src="../assets/factulab_pedidos.webp"
-                        data-alt="Listado de pedidos en Factulab"
+        <section class="pb-16">
+            <div class="text-center" data-reveal>
+                <span class="eyebrow">Galería</span>
+                <h3 class="mt-5 text-3xl md:text-4xl">Capturas de la aplicación</h3>
+                <p class="mt-4 text-sm text-gray-color">Haz clic en una captura para ampliarla</p>
+            </div>
+
+            <div class="mx-auto mt-10 grid max-w-5xl gap-x-6 gap-y-10 sm:grid-cols-2" data-reveal-group="110">
+                <figure data-reveal="zoom">
+                    <button type="button" class="shot js-lightbox-trigger"
+                        data-src="../assets/factulab_pedidos.webp" data-alt="Listado de pedidos en Factulab"
                         aria-label="Ampliar captura de pedidos">
-                        <img src="../assets/factulab_pedidos.webp" alt="Listado de pedidos en Factulab"
-                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                        <img src="../assets/factulab_pedidos.webp" alt="Listado de pedidos en Factulab">
                     </button>
-                    <figcaption class="text-gray-color text-sm mt-3 text-center">Gestión de pedidos</figcaption>
+                    <figcaption class="mt-3 text-center text-sm text-gray-color">Gestión de pedidos</figcaption>
                 </figure>
-                <figure>
-                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
-                        data-src="../assets/factulab_facturas.webp"
-                        data-alt="Listado de facturas en Factulab"
+
+                <figure data-reveal="zoom">
+                    <button type="button" class="shot js-lightbox-trigger"
+                        data-src="../assets/factulab_facturas.webp" data-alt="Listado de facturas en Factulab"
                         aria-label="Ampliar captura de facturas">
-                        <img src="../assets/factulab_facturas.webp" alt="Listado de facturas en Factulab"
-                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                        <img src="../assets/factulab_facturas.webp" alt="Listado de facturas en Factulab">
                     </button>
-                    <figcaption class="text-gray-color text-sm mt-3 text-center">Listado de facturas</figcaption>
+                    <figcaption class="mt-3 text-center text-sm text-gray-color">Listado de facturas</figcaption>
                 </figure>
-                <figure>
-                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
-                        data-src="../assets/factulab_disenos.jpg"
-                        data-alt="Diseños y plantillas en Factulab"
+
+                <figure data-reveal="zoom">
+                    <button type="button" class="shot js-lightbox-trigger"
+                        data-src="../assets/factulab_disenos.jpg" data-alt="Diseños y plantillas en Factulab"
                         aria-label="Ampliar captura de diseños y plantillas">
-                        <img src="../assets/factulab_disenos.jpg" alt="Diseños y plantillas en Factulab"
-                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                        <img src="../assets/factulab_disenos.jpg" alt="Diseños y plantillas en Factulab">
                     </button>
-                    <figcaption class="text-gray-color text-sm mt-3 text-center">Diseños y plantillas</figcaption>
+                    <figcaption class="mt-3 text-center text-sm text-gray-color">Diseños y plantillas</figcaption>
                 </figure>
-                <figure>
-                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
-                        data-src="../assets/factulab_disenador.webp"
-                        data-alt="Diseñador online en el navegador"
+
+                <figure data-reveal="zoom">
+                    <button type="button" class="shot js-lightbox-trigger"
+                        data-src="../assets/factulab_disenador.webp" data-alt="Diseñador online en el navegador"
                         aria-label="Ampliar captura del diseñador online">
-                        <img src="../assets/factulab_disenador.webp" alt="Diseñador online en el navegador"
-                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                        <img src="../assets/factulab_disenador.webp" alt="Diseñador online en el navegador">
                     </button>
-                    <figcaption class="text-gray-color text-sm mt-3 text-center">Diseñador online (Canvas)</figcaption>
+                    <figcaption class="mt-3 text-center text-sm text-gray-color">Diseñador online (Canvas)</figcaption>
                 </figure>
-                <figure>
-                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
-                        data-src="../assets/factulab_tienda.webp"
-                        data-alt="Tienda online con marca en Factulab"
+
+                <figure data-reveal="zoom">
+                    <button type="button" class="shot js-lightbox-trigger"
+                        data-src="../assets/factulab_tienda.webp" data-alt="Tienda online con marca en Factulab"
                         aria-label="Ampliar captura de la tienda">
-                        <img src="../assets/factulab_tienda.webp" alt="Tienda online con marca en Factulab"
-                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                        <img src="../assets/factulab_tienda.webp" alt="Tienda online con marca en Factulab">
                     </button>
-                    <figcaption class="text-gray-color text-sm mt-3 text-center">Tienda online con marca</figcaption>
+                    <figcaption class="mt-3 text-center text-sm text-gray-color">Tienda online con marca</figcaption>
                 </figure>
-                <figure>
-                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
-                        data-src="../assets/factulab_producto.webp"
-                        data-alt="Ficha de producto en la tienda Factulab"
+
+                <figure data-reveal="zoom">
+                    <button type="button" class="shot js-lightbox-trigger"
+                        data-src="../assets/factulab_producto.webp" data-alt="Ficha de producto en la tienda Factulab"
                         aria-label="Ampliar captura de ficha de producto">
-                        <img src="../assets/factulab_producto.webp" alt="Ficha de producto en la tienda Factulab"
-                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                        <img src="../assets/factulab_producto.webp" alt="Ficha de producto en la tienda Factulab">
                     </button>
-                    <figcaption class="text-gray-color text-sm mt-3 text-center">Ficha de producto</figcaption>
+                    <figcaption class="mt-3 text-center text-sm text-gray-color">Ficha de producto</figcaption>
                 </figure>
             </div>
         </section>
 
-        <footer class="py-16 text-center mt-6">
-            <p class="text-gray-color"> © Davilondev 2026</p>
+        <div class="flex justify-center" data-reveal>
+            <a href="../#projects" class="btn btn-ghost">
+                <span class="btn-arrow" aria-hidden="true">←</span>
+                Volver a proyectos
+            </a>
+        </div>
+    </main>
+
+    <footer class="mt-14 border-t border-white/[0.07] py-12">
+        <div class="w-[90%] mx-auto flex max-w-screen-xl flex-col items-center gap-6 md:flex-row md:justify-between">
+            <p class="text-gray-color">© Davilondev <span data-year>2026</span></p>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="mailto:hello@davilondev.com" class="nav-link">Email</a>
+                <a href="https://github.com/DavidAlonsoRod" target="_blank" rel="noopener noreferrer"
+                    class="nav-link">Github</a>
+                <a href="https://www.linkedin.com/in/david-alonso-r/" target="_blank" rel="noopener noreferrer"
+                    class="nav-link">Linkedin</a>
+            </div>
             <p class="text-gray-color">Hecho con tailwind, css y html</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
-    <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 p-4"
-        role="dialog" aria-modal="true" aria-label="Vista ampliada de captura">
+    <button type="button" class="to-top" data-to-top aria-label="Volver arriba">
+        <span aria-hidden="true">↑</span>
+    </button>
+
+    <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 p-4" role="dialog"
+        aria-modal="true" aria-label="Vista ampliada de captura">
         <button type="button" id="lightbox-close"
-            class="absolute top-4 right-4 text-white text-3xl leading-none px-3 py-1 rounded hover:bg-white/10"
+            class="absolute right-4 top-4 rounded px-3 py-1 text-3xl leading-none text-white hover:bg-white/10"
             aria-label="Cerrar">×</button>
-        <img id="lightbox-img" src="" alt=""
-            class="max-h-[90vh] max-w-[95vw] object-contain rounded-lg shadow-2xl">
+        <img id="lightbox-img" alt=""
+            class="max-h-[90vh] max-w-[95vw] rounded-lg object-contain shadow-2xl">
     </div>
 
-    <script>
-        (function () {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            const closeBtn = document.getElementById('lightbox-close');
-
-            function openLightbox(src, alt) {
-                lightboxImg.src = src;
-                lightboxImg.alt = alt || '';
-                lightbox.classList.remove('hidden');
-                lightbox.classList.add('flex');
-                document.body.style.overflow = 'hidden';
-            }
-
-            function closeLightbox() {
-                lightbox.classList.add('hidden');
-                lightbox.classList.remove('flex');
-                lightboxImg.src = '';
-                document.body.style.overflow = '';
-            }
-
-            document.querySelectorAll('.js-lightbox-trigger').forEach(function (btn) {
-                btn.addEventListener('click', function () {
-                    openLightbox(btn.dataset.src, btn.dataset.alt);
-                });
-            });
-
-            closeBtn.addEventListener('click', closeLightbox);
-            lightbox.addEventListener('click', function (e) {
-                if (e.target === lightbox) closeLightbox();
-            });
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
-                    closeLightbox();
-                }
-            });
-        })();
-    </script>
+    <script src="../js/main.js?v=2" defer></script>
 </body>
 
 </html>
