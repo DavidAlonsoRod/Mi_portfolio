@@ -39,51 +39,40 @@
         </header>
 
         <h1 class="text-4xl text-center mt-8">Factulab · VeriFactu</h1>
-        <h2 class="text-lg text-center mt-4 text-gray-color">
-            VeriFactu compliance in invoicing software (AEAT)
+        <h2 class="text-lg text-center mt-4 text-gray-color max-w-3xl mx-auto leading-relaxed">
+            Multi-tenant SaaS for photo labs: production, billing and a branded storefront
         </h2>
 
-        <div class="grid gap-8 mt-10 justify-center justify-items-center md:grid-cols-2 md:gap-8">
-            <div class="w-full max-w-xl rounded-lg">
+        <div class="grid gap-10 mt-12 items-start justify-center md:grid-cols-2">
+            <div class="w-full max-w-xl mx-auto">
                 <img src="../../assets/factulab_verifactu.jpg" alt="Factulab screenshot with VeriFactu"
-                    class="w-full object-cover object-top mx-auto rounded-lg">
+                    class="w-full h-auto rounded-lg border border-white/10">
                 <p class="text-gray-color text-sm mt-3 text-center">Factulab landing highlighting VeriFactu</p>
             </div>
 
-            <div class="w-full max-w-md rounded-lg mt-2">
-                <h4 class="text-2xl">Technologies</h4>
-                <p class="text-gray-color mt-2">BACKEND: PYTHON + FLASK</p>
-                <p class="text-gray-color">FRONT: JS · REACT</p>
-                <p class="text-gray-color">AEAT integration · VERI*FACTU mode</p>
-                <p class="text-gray-color">Tax QR on invoices</p>
-                <p class="text-gray-color">Chained hash and immutability</p>
-                <p class="text-gray-color">SIF responsible declaration</p>
-
-                <div class="grid-col-2 flex justify-between mt-4">
-                    <div>
-                        <h5 class="text-ellipsis text-xs mt-1">Built for</h5>
-                        <p class="text-gray-color text-sm mt-1">VEGA CLOUD SOLUTIONS S.L.</p>
-                    </div>
-                    <div>
-                        <h5 class="text-ellipsis mt-1 text-xs">Date</h5>
-                        <p class="text-gray-color mt-1 text-sm flex justify-end">2025–2026</p>
-                    </div>
+            <div class="w-full max-w-md mx-auto md:mx-0 md:pt-2">
+                <h4 class="text-2xl mb-4">Technologies</h4>
+                <div class="flex flex-wrap gap-2 text-sm text-gray-color">
+                    <span class="rounded border border-white/10 px-2.5 py-1">Python · Flask · Gunicorn</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">SQLAlchemy · Alembic · JWT</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">PostgreSQL</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">React · Canvas 2D / SVG</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">AWS S3 · Dropbox</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">PyMuPDF · FontTools</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">Redsys · VeriFactu</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">PGC · IMAP · WooCommerce</span>
                 </div>
 
-                <h4 class="text-2xl mt-6">Description</h4>
-                <p class="text-gray-color mt-3">
-                    Implementation of <strong class="text-white font-medium">VeriFactu</strong> inside
-                    Factulab, the invoicing and management software by VEGA CLOUD SOLUTIONS.
-                </p>
-                <p class="text-gray-color mt-3">
-                    Each invoice generates a compliant record (RD 1007/2023 / Order HAC/1177/2024):
-                    submission to AEAT, chained fingerprint, tax QR in the UI and
-                    responsible declaration of the invoicing IT system (SIF).
-                </p>
-                <p class="text-gray-color mt-3">
-                    Includes remittance statuses, send-error handling and VeriFactu block
-                    preview in the billing flow.
-                </p>
+                <div class="flex justify-between gap-6 mt-8 pt-5 border-t border-white/10">
+                    <div>
+                        <h5 class="text-xs tracking-wide uppercase text-white/50">Built for</h5>
+                        <p class="text-gray-color text-sm mt-1">VEGA CLOUD SOLUTIONS S.L.</p>
+                    </div>
+                    <div class="text-right">
+                        <h5 class="text-xs tracking-wide uppercase text-white/50">Date</h5>
+                        <p class="text-gray-color text-sm mt-1">2025–2026</p>
+                    </div>
+                </div>
 
                 <a href="https://factulab.es" target="_blank" rel="noopener noreferrer"
                     class="bg-blue-color text-white px-4 py-2 rounded-lg mt-6 inline-flex zoom-hover">
@@ -92,17 +81,76 @@
             </div>
         </div>
 
-        <section class="mt-16 mb-8">
-            <h3 class="text-2xl text-center mb-6">App screenshots</h3>
-            <p class="text-gray-color text-sm text-center mb-6">Click a screenshot to enlarge</p>
-            <div class="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+        <section class="mt-16 max-w-3xl mx-auto">
+            <h4 class="text-2xl text-center mb-5">Description</h4>
+            <p class="text-gray-color leading-relaxed">
+                B2B multi-tenant SaaS covering production, billing, accounting and a branded online store
+                for photo labs. These are Factulab’s main features:
+            </p>
+            <ul class="mt-6 space-y-3 text-gray-color border-l border-blue-color/40 pl-5 leading-relaxed">
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Intake of customer-supplied images for printing on different media
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Invoicing of orders coming from the online store
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Accounting for the company’s operations
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    AI-assisted scanning of purchase invoices for import into accounting
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Branded online store for selling products customized with images and text
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Trello-style task management assigned to employees
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Customer portal to view orders and invoices
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Spanish e-invoicing with VeriFactu (AEAT)
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Integrations: Redsys payments, PGC accounting, IMAP purchase invoices and WooCommerce
+                </li>
+            </ul>
+            <div class="mt-8 space-y-3 text-gray-color leading-relaxed border-t border-white/10 pt-6">
+                <p>
+                    Multi-tenant Flask API (SQLAlchemy, Alembic, JWT, PostgreSQL) with per-company
+                    isolation, Gunicorn in production and domain-based branding.
+                </p>
+                <p>
+                    Browser online designer (Canvas 2D, SVG, vector PDF with PyMuPDF/FontTools)
+                    for print-ready layouts, plus a buyer-facing customization flow.
+                </p>
+            </div>
+        </section>
+
+        <section class="mt-16">
+            <h3 class="text-2xl text-center mb-6">Demo video</h3>
+            <div class="relative w-full max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden border border-white/10">
+                <iframe class="absolute inset-0 h-full w-full"
+                    src="https://www.youtube.com/embed/Yo_eXC7-72I"
+                    title="Factulab demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="mt-16 mb-4">
+            <h3 class="text-2xl text-center mb-2">App screenshots</h3>
+            <p class="text-gray-color text-sm text-center mb-8">Click a screenshot to enlarge</p>
+            <div class="grid gap-x-6 gap-y-10 sm:grid-cols-2 max-w-5xl mx-auto">
                 <figure>
                     <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
                         data-src="../../assets/factulab_pedidos.webp"
                         data-alt="Orders list in Factulab"
                         aria-label="Enlarge orders screenshot">
                         <img src="../../assets/factulab_pedidos.webp" alt="Orders list in Factulab"
-                            class="w-full object-cover object-top rounded-lg border border-white/10 transition group-hover:border-blue-color/60">
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
                     </button>
                     <figcaption class="text-gray-color text-sm mt-3 text-center">Orders management</figcaption>
                 </figure>
@@ -112,22 +160,50 @@
                         data-alt="Invoices list in Factulab"
                         aria-label="Enlarge invoices screenshot">
                         <img src="../../assets/factulab_facturas.webp" alt="Invoices list in Factulab"
-                            class="w-full object-cover object-top rounded-lg border border-white/10 transition group-hover:border-blue-color/60">
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
                     </button>
                     <figcaption class="text-gray-color text-sm mt-3 text-center">Invoices list</figcaption>
                 </figure>
-            </div>
-        </section>
-
-        <section class="mt-16 mb-8">
-            <h3 class="text-2xl text-center mb-6">Demo video</h3>
-            <div class="relative w-full max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden border border-white/10">
-                <iframe class="absolute inset-0 h-full w-full"
-                    src="https://www.youtube.com/embed/Yo_eXC7-72I"
-                    title="Factulab demo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                <figure>
+                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
+                        data-src="../../assets/factulab_disenos.jpg"
+                        data-alt="Designs and templates in Factulab"
+                        aria-label="Enlarge designs and templates screenshot">
+                        <img src="../../assets/factulab_disenos.jpg" alt="Designs and templates in Factulab"
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                    </button>
+                    <figcaption class="text-gray-color text-sm mt-3 text-center">Designs and templates</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
+                        data-src="../../assets/factulab_disenador.webp"
+                        data-alt="Browser online designer"
+                        aria-label="Enlarge online designer screenshot">
+                        <img src="../../assets/factulab_disenador.webp" alt="Browser online designer"
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                    </button>
+                    <figcaption class="text-gray-color text-sm mt-3 text-center">Online designer (Canvas)</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
+                        data-src="../../assets/factulab_tienda.webp"
+                        data-alt="Branded online storefront in Factulab"
+                        aria-label="Enlarge storefront screenshot">
+                        <img src="../../assets/factulab_tienda.webp" alt="Branded online storefront in Factulab"
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                    </button>
+                    <figcaption class="text-gray-color text-sm mt-3 text-center">Branded storefront</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
+                        data-src="../../assets/factulab_producto.webp"
+                        data-alt="Product page in the Factulab store"
+                        aria-label="Enlarge product page screenshot">
+                        <img src="../../assets/factulab_producto.webp" alt="Product page in the Factulab store"
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                    </button>
+                    <figcaption class="text-gray-color text-sm mt-3 text-center">Product page</figcaption>
+                </figure>
             </div>
         </section>
 

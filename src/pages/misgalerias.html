@@ -47,8 +47,8 @@
         </header>
 
         <h1 class="text-4xl text-center mt-8">Mis Galerías <span class="text-lg text-gray-color font-medium">(en desarrollo)</span></h1>
-        <h2 class="text-lg text-center mt-4 text-gray-color">
-            Galerías online para fotógrafos profesionales
+        <h2 class="text-lg text-center mt-4 text-gray-color max-w-3xl mx-auto">
+            SaaS para fotógrafos: galerías de cliente, selección de fotos y back-office del estudio
         </h2>
 
         <div class="grid gap-8 mt-10 justify-center justify-items-center md:grid-cols-2 md:gap-8">
@@ -62,10 +62,10 @@
                 <h4 class="text-2xl">Tecnologías</h4>
                 <p class="text-gray-color mt-2">BACKEND: PYTHON + FLASK</p>
                 <p class="text-gray-color">FRONT: JS · REACT · VITE</p>
-                <p class="text-gray-color">Almacenamiento S3 (upload firmado)</p>
-                <p class="text-gray-color">Galerías públicas por slug</p>
-                <p class="text-gray-color">Auth JWT independiente</p>
-                <p class="text-gray-color">Selección de fotos por cliente</p>
+                <p class="text-gray-color">AWS S3 (PUT firmado)</p>
+                <p class="text-gray-color">Galerías públicas /g/:slug</p>
+                <p class="text-gray-color">Auth JWT aislada (cookies · CORS)</p>
+                <p class="text-gray-color">Selección, comentarios y descarga</p>
 
                 <div class="grid-col-2 flex justify-between mt-4">
                     <div>
@@ -78,24 +78,26 @@
                     </div>
                 </div>
 
-                <h4 class="text-2xl mt-6">Descripción</h4>
-                <p class="text-gray-color mt-3">
-                    Producto de galerías online para fotógrafos: publicar sesiones,
-                    compartir con clientes, marcar favoritas y controlar el acceso
-                    por enlace o contraseña.
-                </p>
-                <p class="text-gray-color mt-3">
-                    Panel «Mis galerías», subida directa a S3 con URLs firmadas,
-                    galería pública por slug y API propia (login/registro de fotógrafo),
-                    independiente del flujo de facturación.
-                </p>
-
                 <a href="https://misgalerias.es" target="_blank" rel="noopener noreferrer"
                     class="bg-blue-color text-white px-4 py-2 rounded-lg mt-6 inline-flex zoom-hover">
                     Ver Mis Galerías
                 </a>
             </div>
         </div>
+
+        <section class="mt-12 mb-4 max-w-3xl mx-auto">
+            <h4 class="text-2xl text-center mb-4">Descripción</h4>
+            <p class="text-gray-color mt-3">
+                SaaS para fotógrafos: galerías de cliente (<code class="text-white">/g/:slug</code>) con acceso
+                por contraseña o enlace, selección de fotos, comentarios y descarga de originales.
+                Back-office del estudio para clientes, contratos, presupuestos, facturas y reserva de sesiones.
+            </p>
+            <p class="text-gray-color mt-3">
+                Las subidas del navegador van directas a S3 (PUT firmado); Flask solo firma las URLs
+                y guarda metadatos. La autenticación de galerías está aislada de la app del laboratorio
+                fotográfico (cookies JWT, CORS).
+            </p>
+        </section>
 
         <footer class="py-16 text-center mt-6">
             <p class="text-gray-color"> © Davilondev 2026</p>

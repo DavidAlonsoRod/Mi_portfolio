@@ -47,51 +47,40 @@
         </header>
 
         <h1 class="text-4xl text-center mt-8">Factulab · VeriFactu</h1>
-        <h2 class="text-lg text-center mt-4 text-gray-color">
-            Cumplimiento VeriFactu en software de facturación (AEAT)
+        <h2 class="text-lg text-center mt-4 text-gray-color max-w-3xl mx-auto leading-relaxed">
+            SaaS multi-tenant para laboratorios fotográficos: producción, facturación y tienda con marca
         </h2>
 
-        <div class="grid gap-8 mt-10 justify-center justify-items-center md:grid-cols-2 md:gap-8">
-            <div class="w-full max-w-xl rounded-lg">
+        <div class="grid gap-10 mt-12 items-start justify-center md:grid-cols-2">
+            <div class="w-full max-w-xl mx-auto">
                 <img src="../assets/factulab_verifactu.jpg" alt="Captura de Factulab con VeriFactu disponible"
-                    class="w-full object-cover object-top mx-auto rounded-lg">
+                    class="w-full h-auto rounded-lg border border-white/10">
                 <p class="text-gray-color text-sm mt-3 text-center">Landing de Factulab destacando VeriFactu</p>
             </div>
 
-            <div class="w-full max-w-md rounded-lg mt-2">
-                <h4 class="text-2xl">Tecnologías</h4>
-                <p class="text-gray-color mt-2">BACKEND: PYTHON + FLASK</p>
-                <p class="text-gray-color">FRONT: JS · REACT</p>
-                <p class="text-gray-color">Integración AEAT · modalidad VERI*FACTU</p>
-                <p class="text-gray-color">QR tributario en factura</p>
-                <p class="text-gray-color">Hash encadenado e inalterabilidad</p>
-                <p class="text-gray-color">Declaración responsable del SIF</p>
-
-                <div class="grid-col-2 flex justify-between mt-4">
-                    <div>
-                        <h5 class="text-ellipsis text-xs mt-1">Creado para</h5>
-                        <p class="text-gray-color text-sm mt-1">VEGA CLOUD SOLUTIONS S.L.</p>
-                    </div>
-                    <div>
-                        <h5 class="text-ellipsis mt-1 text-xs">Fecha</h5>
-                        <p class="text-gray-color mt-1 text-sm flex justify-end">2025–2026</p>
-                    </div>
+            <div class="w-full max-w-md mx-auto md:mx-0 md:pt-2">
+                <h4 class="text-2xl mb-4">Tecnologías</h4>
+                <div class="flex flex-wrap gap-2 text-sm text-gray-color">
+                    <span class="rounded border border-white/10 px-2.5 py-1">Python · Flask · Gunicorn</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">SQLAlchemy · Alembic · JWT</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">PostgreSQL</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">React · Canvas 2D / SVG</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">AWS S3 · Dropbox</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">PyMuPDF · FontTools</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">Redsys · VeriFactu</span>
+                    <span class="rounded border border-white/10 px-2.5 py-1">PGC · IMAP · WooCommerce</span>
                 </div>
 
-                <h4 class="text-2xl mt-6">Descripción</h4>
-                <p class="text-gray-color mt-3">
-                    Implementación de <strong class="text-white font-medium">VeriFactu</strong> dentro de
-                    Factulab, el software de facturación y gestión de VEGA CLOUD SOLUTIONS.
-                </p>
-                <p class="text-gray-color mt-3">
-                    Cada factura genera registro conforme a la normativa (RD 1007/2023 / Orden HAC/1177/2024):
-                    envío a la AEAT, huella encadenada, QR tributario visible en la interfaz y
-                    declaración responsable del sistema informático de facturación (SIF).
-                </p>
-                <p class="text-gray-color mt-3">
-                    Incluye estados de remisión, gestión de errores de envío y previsualización
-                    del bloque VeriFactu en el flujo de facturación.
-                </p>
+                <div class="flex justify-between gap-6 mt-8 pt-5 border-t border-white/10">
+                    <div>
+                        <h5 class="text-xs tracking-wide uppercase text-white/50">Creado para</h5>
+                        <p class="text-gray-color text-sm mt-1">VEGA CLOUD SOLUTIONS S.L.</p>
+                    </div>
+                    <div class="text-right">
+                        <h5 class="text-xs tracking-wide uppercase text-white/50">Fecha</h5>
+                        <p class="text-gray-color text-sm mt-1">2025–2026</p>
+                    </div>
+                </div>
 
                 <a href="https://factulab.es" target="_blank" rel="noopener noreferrer"
                     class="bg-blue-color text-white px-4 py-2 rounded-lg mt-6 inline-flex zoom-hover">
@@ -100,17 +89,76 @@
             </div>
         </div>
 
-        <section class="mt-16 mb-8">
-            <h3 class="text-2xl text-center mb-6">Capturas de la aplicación</h3>
-            <p class="text-gray-color text-sm text-center mb-6">Haz clic en una captura para ampliarla</p>
-            <div class="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+        <section class="mt-16 max-w-3xl mx-auto">
+            <h4 class="text-2xl text-center mb-5">Descripción</h4>
+            <p class="text-gray-color leading-relaxed">
+                SaaS multi-tenant orientado a B2B que cubre producción, facturación, contabilidad y tienda online con marca
+                para laboratorios fotográficos. Estas son las funciones principales de Factulab:
+            </p>
+            <ul class="mt-6 space-y-3 text-gray-color border-l border-blue-color/40 pl-5 leading-relaxed">
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Obtención de imágenes suministradas por el cliente para impresión en distintos soportes
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Facturación de los pedidos obtenidos de la tienda online
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Contabilidad de las operaciones de la empresa
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Escaneo de facturas de compra con IA para su importación a la contabilidad
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Tienda online con marca para la venta de productos personalizados con imágenes y textos
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Gestión de tareas tipo Trello asignadas a empleados
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Portal de clientes para la visualización de pedidos y facturas
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Facturación electrónica española con VeriFactu (AEAT)
+                </li>
+                <li class="relative pl-1 before:absolute before:-left-[1.35rem] before:top-2.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-color">
+                    Integraciones: pagos Redsys, contabilidad PGC, facturas de compra por IMAP y WooCommerce
+                </li>
+            </ul>
+            <div class="mt-8 space-y-3 text-gray-color leading-relaxed border-t border-white/10 pt-6">
+                <p>
+                    API Flask multi-tenant (SQLAlchemy, Alembic, JWT, PostgreSQL) con aislamiento por
+                    empresa, Gunicorn en producción y branding basado en dominio.
+                </p>
+                <p>
+                    Diseñador online en el navegador (Canvas 2D, SVG, PDF vectorial con PyMuPDF/FontTools)
+                    para maquetas listas para imprimir, más un flujo de personalización orientado al comprador.
+                </p>
+            </div>
+        </section>
+
+        <section class="mt-16">
+            <h3 class="text-2xl text-center mb-6">Vídeo demo</h3>
+            <div class="relative w-full max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden border border-white/10">
+                <iframe class="absolute inset-0 h-full w-full"
+                    src="https://www.youtube.com/embed/Yo_eXC7-72I"
+                    title="Factulab demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="mt-16 mb-4">
+            <h3 class="text-2xl text-center mb-2">Capturas de la aplicación</h3>
+            <p class="text-gray-color text-sm text-center mb-8">Haz clic en una captura para ampliarla</p>
+            <div class="grid gap-x-6 gap-y-10 sm:grid-cols-2 max-w-5xl mx-auto">
                 <figure>
                     <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
                         data-src="../assets/factulab_pedidos.webp"
                         data-alt="Listado de pedidos en Factulab"
                         aria-label="Ampliar captura de pedidos">
                         <img src="../assets/factulab_pedidos.webp" alt="Listado de pedidos en Factulab"
-                            class="w-full object-cover object-top rounded-lg border border-white/10 transition group-hover:border-blue-color/60">
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
                     </button>
                     <figcaption class="text-gray-color text-sm mt-3 text-center">Gestión de pedidos</figcaption>
                 </figure>
@@ -120,22 +168,50 @@
                         data-alt="Listado de facturas en Factulab"
                         aria-label="Ampliar captura de facturas">
                         <img src="../assets/factulab_facturas.webp" alt="Listado de facturas en Factulab"
-                            class="w-full object-cover object-top rounded-lg border border-white/10 transition group-hover:border-blue-color/60">
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
                     </button>
                     <figcaption class="text-gray-color text-sm mt-3 text-center">Listado de facturas</figcaption>
                 </figure>
-            </div>
-        </section>
-
-        <section class="mt-16 mb-8">
-            <h3 class="text-2xl text-center mb-6">Vídeo demo</h3>
-            <div class="relative w-full max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden border border-white/10">
-                <iframe class="absolute inset-0 h-full w-full"
-                    src="https://www.youtube.com/embed/Yo_eXC7-72I"
-                    title="Factulab demo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                <figure>
+                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
+                        data-src="../assets/factulab_disenos.jpg"
+                        data-alt="Diseños y plantillas en Factulab"
+                        aria-label="Ampliar captura de diseños y plantillas">
+                        <img src="../assets/factulab_disenos.jpg" alt="Diseños y plantillas en Factulab"
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                    </button>
+                    <figcaption class="text-gray-color text-sm mt-3 text-center">Diseños y plantillas</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
+                        data-src="../assets/factulab_disenador.webp"
+                        data-alt="Diseñador online en el navegador"
+                        aria-label="Ampliar captura del diseñador online">
+                        <img src="../assets/factulab_disenador.webp" alt="Diseñador online en el navegador"
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                    </button>
+                    <figcaption class="text-gray-color text-sm mt-3 text-center">Diseñador online (Canvas)</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
+                        data-src="../assets/factulab_tienda.webp"
+                        data-alt="Tienda online con marca en Factulab"
+                        aria-label="Ampliar captura de la tienda">
+                        <img src="../assets/factulab_tienda.webp" alt="Tienda online con marca en Factulab"
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                    </button>
+                    <figcaption class="text-gray-color text-sm mt-3 text-center">Tienda online con marca</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
+                        data-src="../assets/factulab_producto.webp"
+                        data-alt="Ficha de producto en la tienda Factulab"
+                        aria-label="Ampliar captura de ficha de producto">
+                        <img src="../assets/factulab_producto.webp" alt="Ficha de producto en la tienda Factulab"
+                            class="w-full h-auto rounded-lg border border-white/10 transition duration-200 group-hover:border-blue-color/50 group-hover:opacity-95">
+                    </button>
+                    <figcaption class="text-gray-color text-sm mt-3 text-center">Ficha de producto</figcaption>
+                </figure>
             </div>
         </section>
 
