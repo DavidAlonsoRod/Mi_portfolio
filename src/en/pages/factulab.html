@@ -85,7 +85,7 @@
                     preview in the billing flow.
                 </p>
 
-                <a href="https://www.factulab.es" target="_blank" rel="noopener noreferrer"
+                <a href="https://factulab.es" target="_blank" rel="noopener noreferrer"
                     class="bg-blue-color text-white px-4 py-2 rounded-lg mt-6 inline-flex zoom-hover">
                     Visit Factulab
                 </a>
@@ -93,13 +93,42 @@
         </div>
 
         <section class="mt-16 mb-8">
-            <h3 class="text-2xl text-center mb-6">VeriFactu responsible declaration</h3>
-            <img src="../../assets/factulab_verifactu_dr.jpg"
-                alt="Factulab VeriFactu responsible declaration page"
-                class="w-full max-w-4xl mx-auto object-cover object-top rounded-lg">
-            <p class="text-gray-color text-sm mt-3 text-center max-w-2xl mx-auto">
-                Public producer certification page for the Factulab SIF.
-            </p>
+            <h3 class="text-2xl text-center mb-6">App screenshots</h3>
+            <p class="text-gray-color text-sm text-center mb-6">Click a screenshot to enlarge</p>
+            <div class="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+                <figure>
+                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
+                        data-src="../../assets/factulab_pedidos.webp"
+                        data-alt="Orders list in Factulab"
+                        aria-label="Enlarge orders screenshot">
+                        <img src="../../assets/factulab_pedidos.webp" alt="Orders list in Factulab"
+                            class="w-full object-cover object-top rounded-lg border border-white/10 transition group-hover:border-blue-color/60">
+                    </button>
+                    <figcaption class="text-gray-color text-sm mt-3 text-center">Orders management</figcaption>
+                </figure>
+                <figure>
+                    <button type="button" class="js-lightbox-trigger block w-full cursor-zoom-in group text-left"
+                        data-src="../../assets/factulab_facturas.webp"
+                        data-alt="Invoices list in Factulab"
+                        aria-label="Enlarge invoices screenshot">
+                        <img src="../../assets/factulab_facturas.webp" alt="Invoices list in Factulab"
+                            class="w-full object-cover object-top rounded-lg border border-white/10 transition group-hover:border-blue-color/60">
+                    </button>
+                    <figcaption class="text-gray-color text-sm mt-3 text-center">Invoices list</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="mt-16 mb-8">
+            <h3 class="text-2xl text-center mb-6">Demo video</h3>
+            <div class="relative w-full max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden border border-white/10">
+                <iframe class="absolute inset-0 h-full w-full"
+                    src="https://www.youtube.com/embed/Yo_eXC7-72I"
+                    title="Factulab demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            </div>
         </section>
 
         <footer class="py-16 text-center mt-6">
@@ -107,6 +136,54 @@
             <p class="text-gray-color">Built with Tailwind CSS and HTML</p>
         </footer>
     </div>
+
+    <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 p-4"
+        role="dialog" aria-modal="true" aria-label="Enlarged screenshot view">
+        <button type="button" id="lightbox-close"
+            class="absolute top-4 right-4 text-white text-3xl leading-none px-3 py-1 rounded hover:bg-white/10"
+            aria-label="Close">×</button>
+        <img id="lightbox-img" src="" alt=""
+            class="max-h-[90vh] max-w-[95vw] object-contain rounded-lg shadow-2xl">
+    </div>
+
+    <script>
+        (function () {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const closeBtn = document.getElementById('lightbox-close');
+
+            function openLightbox(src, alt) {
+                lightboxImg.src = src;
+                lightboxImg.alt = alt || '';
+                lightbox.classList.remove('hidden');
+                lightbox.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+                lightboxImg.src = '';
+                document.body.style.overflow = '';
+            }
+
+            document.querySelectorAll('.js-lightbox-trigger').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    openLightbox(btn.dataset.src, btn.dataset.alt);
+                });
+            });
+
+            closeBtn.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) closeLightbox();
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+                    closeLightbox();
+                }
+            });
+        })();
+    </script>
 </body>
 
 </html>
