@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My family</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+
+<body class="font-dm-sans bg-color-background text-white">
+    <div class="w-[90%] mx-auto overflow-hidden max-w-screen-xl">
+        <header>
+            <nav class="flex h-20 items-center justify-between">
+                <a href="../" class="w-1/2 max-w-[200px]">
+                    <h1 class="text-white font-bold block text-3xl w-full">David Alonso</h1>
+                </a>
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+                <label for="menu" class="w-10 h-10 bg-open-menu bg-cover bg-center cursor-pointer
+                    border-2 rounded-lg md:hidden
+                    peer-checked/menu:bg-close-menu peer-checked/menu:border-none transition-all z-40"
+                    aria-label="Open menu"></label>
+                <ul
+                    class="fixed inset-0 bg-blue-color px-[5%] grid auto-rows-max content-center justify-items-center
+                            clip-circle-0 gap-6
+                             peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="./about_me.html">About me</a></li>
+                    <li><a href="../#tecnologies">Technologies</a></li>
+                    <li><a href="../#projects">Projects</a></li>
+                    <li><a href="mailto:hello@davilondev.com">Contact</a></li>
+                    <li class="flex items-center gap-2 text-sm font-semibold tracking-wide">
+                        <a href="../../pages/mishijos.html" class="opacity-70 hover:opacity-100">ES</a>
+                        <span class="opacity-40">|</span>
+                        <span class="text-white">EN</span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="grid gap-2 justify-center justify-items-center md:grid-cols-4 md:gap-4">
+            <section>
+                <img src="../../assets/frodopaula.jpg" alt="Paula"
+                    class="w-60 h-60 object-cover rounded-full mx-auto mt-10 border border-solid border-gray-600">
+                <h1 class="text-center py-5 text-4xl">Paula</h1>
+                <p class="text-center px-5 text-gray-color text-lg">My pride and joy — a focused student, and simply
+                    wonderful.</p>
+            </section>
+            <section>
+                <img src="../../assets/frodoanddavid.webp" alt="David"
+                    class="w-60 h-60 object-cover rounded-full mx-auto mt-10 border border-solid border-gray-600">
+                <h1 class="text-center py-5 text-4xl">David</h1>
+                <p class="text-center px-5 text-gray-color text-lg">The rebel of the house — into bikes, cars and gaming.
+                </p>
+            </section>
+            <section>
+                <img src="../../assets/vega.webp" alt="Vega"
+                    class="w-60 h-60 object-cover rounded-full mx-auto mt-10 border border-solid border-gray-600">
+                <h1 class="text-center py-5 text-4xl">Vega</h1>
+                <p class="text-center px-5 text-gray-color text-lg">A pure whirlwind — lives to run, jump and play
+                    nonstop.</p>
+            </section>
+            <section>
+                <img src="../../assets/frodo_vintage.webp" alt="Frodo"
+                    class="w-60 h-60 object-cover rounded-full mx-auto mt-10 border border-solid border-gray-600">
+                <h1 class="text-center py-5 text-4xl">Frodo</h1>
+                <p class="text-center px-5 text-gray-color text-lg">King of the house — kind, obedient, lives to eat and
+                    sleep.</p>
+            </section>
+        </div>
+    </div>
+    <footer class="py-16 text-center">
+        <p class="text-gray-color">© Davilondev 2026</p>
+        <p class="text-gray-color">Built with Tailwind CSS and HTML</p>
+    </footer>
+</body>
+
+</html>

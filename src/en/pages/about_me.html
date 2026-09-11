@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About me</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+
+<body class="font-dm-sans bg-color-background text-white flex flex-col min-h-screen">
+    <div class="w-[70%] mx-auto overflow-hidden max-w-screen-xl flex-grow">
+        <header>
+            <nav class="flex h-20 items-center justify-between">
+                <a href="../" class="w-1/2 max-w-[200px]">
+                    <h1 class="text-white font-bold block text-3xl w-full">David Alonso</h1>
+                </a>
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+                <label for="menu" class="w-10 h-10 bg-open-menu bg-cover bg-center cursor-pointer
+                        border-2 rounded-lg md:hidden
+                        peer-checked/menu:bg-close-menu peer-checked/menu:border-none transition-all z-40"
+                    aria-label="Open menu"></label>
+                <ul
+                    class="fixed inset-0 bg-blue-color px-[5%] grid auto-rows-max content-center justify-items-center
+                                clip-circle-0 gap-6
+                                 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../#tecnologies">Technologies</a></li>
+                    <li><a href="../#projects">Projects</a></li>
+                    <li><a href="mailto:hello@davilondev.com">Contact</a></li>
+                    <li class="flex items-center gap-2 text-sm font-semibold tracking-wide">
+                        <a href="../../pages/about_me.html" class="opacity-70 hover:opacity-100">ES</a>
+                        <span class="opacity-40">|</span>
+                        <span class="text-white">EN</span>
+                    </li>
+                </ul>
+            </nav>
+            <section class="pt-10 pb-16 md:flex justify-between items-center">
+                <figure class="md:order-1">
+                    <img src="../../assets/foto_perfil.jpg" alt="David Alonso"
+                        class="w-[50%] aspect-square rounded-full object-cover object-[center_30%] max-w-sm mx-auto">
+                </figure>
+                <article class="text-center mt-8 md:w-1/2 md:text-left">
+                    <h1 class="text-4xl md:text-5xl">About me</h1>
+                    <p class="font-extralight text-left text-gray-color text-lg mt-4">
+                        Full Stack Developer passionate about photography and graphic design,
+                        with experience building and optimizing e-commerce platforms
+                        and SaaS products from frontend to backend.
+                    </p>
+                </article>
+            </section>
+
+            <section class="mt-8 justify-center text-left">
+                <h3 class="text-3xl mt-8">Professional experience</h3>
+
+                <h5 class="text-xl mt-6 mx-3">2024 – present · Vega Cloud Solutions SL</h5>
+                <p class="text-gray-color text-lg mt-2 mx-3">Full Stack Developer · Almuñécar, Granada</p>
+                <p class="text-gray-color text-lg mt-2">
+                    Design, development and operation of two production SaaS products:
+                    <a class="text-blue-color mx-1" href="https://www.factulab.es" target="_blank"
+                        rel="noopener noreferrer">Factulab</a>
+                    and
+                    <a class="text-blue-color mx-1" href="https://misgalerias.es" target="_blank"
+                        rel="noopener noreferrer">My Galleries</a>.
+                </p>
+                <ol class="list-decimal text-gray-color text-left mx-12 my-6">
+                    <li>Factulab: multi-tenant SaaS for photo labs (React, Flask, PostgreSQL, VeriFactu, Redsys).</li>
+                    <li>My Galleries: online galleries for photographers, photo selection, S3 and independent auth.</li>
+                </ol>
+
+                <h5 class="text-xl mt-4 mx-3">2015 – 2024 · DP Impresiones SL</h5>
+                <p class="text-gray-color text-lg mt-2 mx-3">Web Developer · Granada</p>
+                <p class="text-gray-color text-lg mt-2">
+                    Development and maintenance of websites for custom products and photo album sales
+                    with WooCommerce, JavaScript and WordPress.
+                </p>
+                <ol class="list-decimal text-gray-color text-left mx-12 my-6">
+                    <li>Built <a class="text-blue-color mx-1" href="https://dpalbum.es" target="_blank"
+                            rel="noopener noreferrer">Dp Album</a> with WordPress and WooCommerce.</li>
+                    <li>Product photography and image editing.</li>
+                    <li>Website maintenance and SEO.</li>
+                    <li>Marketing and advertising campaigns.</li>
+                    <li>Catalog and price list design in PDF.</li>
+                </ol>
+
+                <h5 class="text-xl mt-4 mx-3">2006 – 2015 · David Alonso Photography</h5>
+                <p class="text-gray-color text-lg mt-2 mx-3">Professional photographer · Almuñécar, Granada</p>
+                <p class="text-gray-color text-lg mt-2">
+                    Professional photography and graphic design in my own studio.
+                </p>
+                <ol class="list-decimal text-gray-color text-left mx-12 my-6">
+                    <li>Studio photography for catalogs.</li>
+                    <li>Wedding photography.</li>
+                    <li>Children's photography.</li>
+                    <li>Graphic design.</li>
+                    <li>Website maintenance.</li>
+                </ol>
+            </section>
+
+            <section class="mt-8 justify-center text-left">
+                <h3 class="text-3xl mt-8">Education</h3>
+                <h5 class="text-xl mt-4 mx-3">Full Stack Developer · 2024</h5>
+                <p class="text-gray-color text-lg mt-2 mx-3">4Geeks Academy</p>
+                <h5 class="text-xl mt-4 mx-3">Digital Imaging Laboratory Technician · 2001</h5>
+                <p class="text-gray-color text-lg mt-2 mx-3">IES Albaycín, Granada</p>
+            </section>
+
+            <section class="mt-8 justify-center text-left">
+                <h3 class="text-3xl mt-8">Skills</h3>
+                <h5 class="text-xl mt-4 mx-3">Frontend</h5>
+                <p class="text-gray-color text-lg mt-2 mx-3">HTML/CSS, JavaScript, React, Tailwind, Bootstrap</p>
+                <h5 class="text-xl mt-4 mx-3">Backend</h5>
+                <p class="text-gray-color text-lg mt-2 mx-3">Python, Flask, Node.js, PHP, Laravel, PostgreSQL</p>
+                <h5 class="text-xl mt-4 mx-3">Tools</h5>
+                <p class="text-gray-color text-lg mt-2 mx-3">Git, REST APIs, WordPress/WooCommerce, Scrum</p>
+            </section>
+
+            <section class="mt-8 justify-center text-left">
+                <h3 class="text-3xl mt-8">Additional skills</h3>
+                <h5 class="text-xl mt-4 mx-3">Design</h5>
+                <p class="text-gray-color text-lg mt-2 mx-3">
+                    Photoshop, InDesign, Lightroom, Illustrator, Figma, Premiere, CapCut
+                </p>
+            </section>
+
+            <section class="mt-8 text-left">
+                <h3 class="text-3xl mt-8">Languages</h3>
+                <div class="flex mt-6 flex-wrap">
+                    <h5 class="text-xl mx-2">Spanish</h5>
+                    <p class="text-gray-color text-lg mx-2">Native</p>
+                    <h5 class="text-xl mx-4">English</h5>
+                    <p class="text-gray-color text-lg mx-2">Advanced</p>
+                </div>
+            </section>
+        </header>
+    </div>
+    <footer class="py-16 text-center">
+        <p class="text-gray-color">© Davilondev 2026</p>
+        <p class="text-gray-color">Built with Tailwind CSS and HTML</p>
+    </footer>
+</body>
+
+</html>

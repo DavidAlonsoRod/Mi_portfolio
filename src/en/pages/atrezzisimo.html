@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Atrezzisimo</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+
+<body class="font-dm-sans bg-color-background text-white flex flex-col min-h-screen">
+    <div class="w-[90%] mx-auto overflow-hidden max-w-screen-xl flex-grow">
+        <header>
+            <nav class="flex h-20 items-center justify-between">
+                <a href="../" class="w-1/2 max-w-[200px]">
+                    <h1 class="text-white font-bold block text-3xl w-full">David Alonso</h1>
+                </a>
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+                <label for="menu" class="w-10 h-10 bg-open-menu bg-cover bg-center cursor-pointer
+                        border-2 rounded-lg md:hidden
+                        peer-checked/menu:bg-close-menu peer-checked/menu:border-none transition-all z-40"
+                    aria-label="Open menu"></label>
+                <ul
+                    class="fixed inset-0 bg-blue-color px-[5%] grid auto-rows-max content-center justify-items-center
+                                clip-circle-0 gap-6
+                                 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../#tecnologies">Technologies</a></li>
+                    <li><a href="../#projects">Projects</a></li>
+                    <li><a href="mailto:hello@davilondev.com">Contact</a></li>
+                    <li class="flex items-center gap-2 text-sm font-semibold tracking-wide">
+                        <a href="../../pages/atrezzisimo.html" class="opacity-70 hover:opacity-100">ES</a>
+                        <span class="opacity-40">|</span>
+                        <span class="text-white">EN</span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="text-4xl text-center mt-8">Atrezzisimo</h1>
+        <div class="grid gap-2 mt-8 justify-center justify-items-center md:grid-cols-2 md:gap-4">
+            <div class="rounded-lg">
+                <img src="../../assets/atrezzisimo.webp" alt="Atrezzisimo"
+                    class="w-96 object-cover mx-auto mt-10 rounded-lg">
+            </div>
+            <div class="grid gap-2 justify-center justify-items-center md:grid-cols-4 md:gap-4">
+                <div class="w-80 rounded-lg mt-8 items-center justify-center">
+                    <h4 class="text-2xl">Technologies</h4>
+                    <ol>
+                        <li>
+                            <p class="text-gray-color">- WooCommerce CMS</p>
+                        </li>
+                        <li>
+                            <p class="text-gray-color">- API integration for product personalization with photographs.</p>
+                        </li>
+                    </ol>
+                    <div class="grid-col-2 flex justify-between">
+                        <div class="mt-2">
+                            <h5 class="text-ellipsis text-xs mt-1">Built for</h5>
+                            <p class="text-gray-color text-sm mt-1">Atrezzisimo</p>
+                        </div>
+                        <div class="mt-2">
+                            <h5 class="text-ellipsis mt-1 text-xs">Date</h5>
+                            <p class="text-gray-color mt-1 text-sm flex justify-end">2022</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl mt-3">Description</h4>
+                        <p class="text-gray-color">Online props store for photographers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="py-16 text-center mt-6">
+            <p class="text-gray-color">© Davilondev 2026</p>
+            <p class="text-gray-color">Built with Tailwind CSS and HTML</p>
+        </footer>
+    </div>
+</body>
+
+</html>
